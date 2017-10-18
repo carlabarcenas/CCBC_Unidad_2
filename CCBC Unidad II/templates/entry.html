@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h2>{{the_title}}</h2>
+    <form method="post" action="/exec_area">
+       <table>
+           <p> Calcula el area de un ortoedro </p>
+           <tr>
+               <td>a:</td>
+               <td><input type="number" name="a" /></td>
+           </tr>
+           <tr>
+               <td>b:</td>
+               <td><input type="number" name="b" /></td>
+           </tr>
+            <tr>
+               <td>c:</td>
+               <td><input type="number" name="c" /></td>
+           </tr>
+         </table>
+        <p>As clic en el boton para ver resultado.</p>
+        <p><input type="submit" name="btn_calc" value="Calcule el area" /></p>
+    </form>
+{% endblock%}
